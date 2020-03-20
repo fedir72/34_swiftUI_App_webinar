@@ -15,10 +15,13 @@ struct ContentView: View {
             VStack{
                 GeometryReader {geometry in
                     HStack {
+                        NavigationLink(destination: ChannelView(), label: {
+                            Text("Edit channel")
+                        })
                         Button(action: {
                             print("123")
                         }, label: {
-                            Text("Button")
+                            Text("Edit Content")
                         })
                     }
                 }
