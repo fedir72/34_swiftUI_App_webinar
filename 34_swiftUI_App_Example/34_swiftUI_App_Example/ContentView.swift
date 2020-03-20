@@ -14,18 +14,17 @@ struct ContentView: View {
         NavigationView {
             VStack{
                 GeometryReader {geometry in
-                    HStack {
+                    HStack(spacing: 20) {
                         NavigationLink(destination: ChannelView(), label: {
                             Text("Edit channel")
-                        })
+                        }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))).background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))).cornerRadius(10)
                         Button(action: {
                             print("123")
                         }, label: {
                             Text("Edit Content")
-                        })
-                    }
-                }
-            Text("Hello World")
+                        }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))).background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))).cornerRadius(10)                    }
+                    }.padding().frame(height: 50)
+                Text("Hello World")
                 Text( "Banana")
             .navigationBarTitle("SwiftBook.ru")
             }
