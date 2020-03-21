@@ -9,13 +9,36 @@
 import SwiftUI
 
 struct _VideoView: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @State var videoTitle: String
+    @State var videoDescription: String
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+         NavigationView{
+            VStack {
+            TextField("VideoTitle", text: $videoTitle)
+             TextField("Video description", text: $videoDescription)
+                Divider()
+                Button(action: {
+                    print("1234")
+                    self.presentationMode.wrappedValue.dismiss()//сворачивание экрана
+                }, label: {
+                    Text("Dismiss this vc")
+                })
+                Spacer()
+            }.padding()
+            .navigationBarTitle("SwiftBook.ru ")
+        }
+        
+        
     }
 }
 
-struct _VideoView_Previews: PreviewProvider {
-    static var previews: some View {
-        _VideoView()
-    }
-}
+//struct _VideoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        _VideoView(videoTitle: "vvv", videoDescription: "vvv")
+//    }
+//}
