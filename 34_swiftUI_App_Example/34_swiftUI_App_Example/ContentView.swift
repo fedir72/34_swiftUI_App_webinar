@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+   @State private var shovingVideView = false
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading)  {
@@ -20,9 +22,12 @@ struct ContentView: View {
                         }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))).background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))).cornerRadius(10)
                         Button(action: {
                             print("123")
+                            self.shovingVideView.toggle()
                         }, label: {
                             Text("Edit Content")
-                        }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))).background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))).cornerRadius(10)                    }
+                        }).sheet(isPresented: self.$shovingVideView , content: {
+                            _VideoView()
+                        } ).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))).background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))).cornerRadius(10)                    }
                     }.padding().frame(height: 50)
                 Divider()//разделение экрана
                 HStack {

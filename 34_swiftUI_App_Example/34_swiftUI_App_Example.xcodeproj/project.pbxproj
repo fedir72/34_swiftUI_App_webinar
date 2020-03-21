@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A327D98824266C8C0006367F /*  VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A327D98724266C8C0006367F /*  VideoView.swift */; };
 		A32FEFBE242515E2001168C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FEFBD242515E2001168C7 /* AppDelegate.swift */; };
 		A32FEFC0242515E2001168C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FEFBF242515E2001168C7 /* SceneDelegate.swift */; };
 		A32FEFC3242515E2001168C7 /* _4_swiftUI_App_Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A32FEFC1242515E2001168C7 /* _4_swiftUI_App_Example.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A327D98724266C8C0006367F /*  VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " VideoView.swift"; sourceTree = "<group>"; };
 		A32FEFBA242515E2001168C7 /* 34_swiftUI_App_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 34_swiftUI_App_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32FEFBD242515E2001168C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32FEFBF242515E2001168C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				A32FEFBD242515E2001168C7 /* AppDelegate.swift */,
 				A32FEFBF242515E2001168C7 /* SceneDelegate.swift */,
+				A327D98724266C8C0006367F /*  VideoView.swift */,
 				A32FEFC4242515E2001168C7 /* ContentView.swift */,
 				A32FEFC6242515E3001168C7 /* Assets.xcassets */,
 				A32FEFCB242515E3001168C7 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32FEFBE242515E2001168C7 /* AppDelegate.swift in Sources */,
+				A327D98824266C8C0006367F /*  VideoView.swift in Sources */,
 				A32FEFC0242515E2001168C7 /* SceneDelegate.swift in Sources */,
 				A32FEFC5242515E2001168C7 /* ContentView.swift in Sources */,
 				A330CE30242558CC007C165F /* ChannelView.swift in Sources */,
