@@ -10,10 +10,10 @@ import SwiftUI
 
 struct _VideoView: View {
     
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>//мод для дисмисс
     
-    @State var videoTitle: String
-    @State var videoDescription: String
+    @Binding var videoTitle: String
+    @Binding var videoDescription: String
     
     
     var body: some View {
